@@ -45,7 +45,7 @@ namespace RockPaperScizors
                     case 0:
                         LoadImage(imgComputer, "images/Rock.png");
                         labelComputer.Content = "ROCK";
-                        labelComputer.Foreground = Brushes.Red;
+                        labelComputer.Foreground = Brushes.PaleVioletRed;
                     break;
 
                     case 1:
@@ -107,7 +107,7 @@ namespace RockPaperScizors
         private void ImgRock_MouseUp(object sender, MouseButtonEventArgs e)
         {
             labelUser.Content = "ROCK";
-            labelUser.Foreground = Brushes.Red;
+            labelUser.Foreground = Brushes.PaleVioletRed;
 
             Play(0);
         }
