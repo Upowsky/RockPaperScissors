@@ -1,0 +1,22 @@
+﻿<Window x:Class="RockPaperScizors.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RockPaperScizors"
+        mc:Ignorable="d"
+        Title="Game" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="imgRock" HorizontalAlignment="Left" Height="100" Margin="84,52,0,0" VerticalAlignment="Top" Width="100" Cursor="Hand" MouseUp="ImgRock_MouseUp"/>
+        <Image x:Name="imgPaper" HorizontalAlignment="Left" Height="100" Margin="84,157,0,0" VerticalAlignment="Top" Width="100" Cursor="Hand" MouseUp="ImgPaper_MouseUp"/>
+        <Image x:Name="imgScissors" HorizontalAlignment="Left" Height="100" Margin="84,262,0,0" VerticalAlignment="Top" Width="100" Cursor="Hand" MouseUp="ImgScissors_MouseUp"/>
+        <Image x:Name="imgComputer" HorizontalAlignment="Left" Height="100" Margin="620,157,0,0" VerticalAlignment="Top" Width="100"/>
+
+        <Label x:Name="labelUser" HorizontalAlignment="Left" Margin="240,196,0,0" VerticalAlignment="Top" Width="109" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="labelComputer" HorizontalAlignment="Left" Margin="511,196,0,0" VerticalAlignment="Top" Width="109" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="labelResult" HorizontalAlignment="Left" Margin="370,196,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="labelUserPoints" HorizontalAlignment="Left" Margin="240,335,0,0" VerticalAlignment="Top" Content="0" FontSize="20" Foreground="Green" FontWeight="Bold"/>
+        <Label x:Name="labelComputerPoints" HorizontalAlignment="Left" Margin="598,336,0,0" VerticalAlignment="Top" Content="0" FontSize="20" Foreground="Red" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
